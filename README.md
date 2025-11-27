@@ -21,9 +21,9 @@ Then, I added some Tiger prefabs to the scene and I tagged them with the "Object
 
 Finally, I created a new C# script called "WarriorAudioController" and attached it to the Player. The script plays an audio clip when the player collides with an object tagged as "Objective".
 
-[WarriorAudioController.cs](WarriorAudioController.cs)
+[WarriorAudioController.cs](Scripts/WarriorAudioController.cs)
 
-![Warrior Audio Controller](WarriorAudioController.png)
+![Warrior Audio Controller](Resources/WarriorAudioController.mp4)
 
 #### Exercise 2: Microphone Recording
 
@@ -38,12 +38,18 @@ Using the `Microphone.Start` method, I set the following parameters:
 - `lengthSec`: `10` — the size of the recording buffer in seconds.
 - `frequency`: `44100` Hz (CD quality). If the hardware doesn’t support a requested rate, Unity typically resamples; prefer standard rates like `44100` or `48000`.
 
-[Recorder.cs](Recorder.cs)
+[Recorder.cs](Scripts/Recorder.cs)
 
-![Recorder Setup](RecorderSetup.png)
+![Recorder](Resources/Recorder.mp4)
 
 ### Camera
 
 #### Exercise 3: Webcam Capture
 
-In this exercise, I created a new C# script called "WebcamController" and attached it to the Computer in the scene. The script captures video from the webcam and displays it on the computer screen when the "C" key is pressed. If the "D" key is pressed, the webcam feed stops.
+In this exercise, I created a new C# script called "TV" and I attached it to a plane that represents a TV screen in the scene. I positioned the plane in front of a Computer model, simulating the screen of the computer.
+
+The script captures video from the webcam and displays it on the plane when the "S" key is pressed. Pressing the "P" key stops the webcam feed. Additionally, pressing the "X" key takes a snapshot from the webcam and saves it as a PNG file in a designated folder.
+
+[TV.cs](Scripts/TV.cs)
+
+![TV](Resources/TV.mp4)
