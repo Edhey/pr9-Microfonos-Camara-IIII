@@ -46,7 +46,7 @@ Using the `Microphone.Start` method, I set the following parameters:
 
 #### Exercise 3: Webcam Capture
 
-In this exercise, I created a new C# script called "TV" and I attached it to a plane that represents a TV screen in the scene. I positioned the plane in front of a Computer model, simulating the screen of the computer.
+In this exercise, I created a new C# script called "TV" and I attached it to a plane that represents a TV screen in the scene. I positioned the plane in front of a Computer model, simulating the screen of the computer and I also created a material with Unlit/Texture shader to display the webcam feed without lighting effects.
 
 The script captures video from the webcam and displays it on the plane when the "S" key is pressed. Pressing the "P" key stops the webcam feed. Additionally, pressing the "X" key takes a snapshot from the webcam and saves it as a PNG file in a designated folder.
 

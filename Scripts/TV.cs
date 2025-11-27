@@ -8,7 +8,7 @@ public class TV : MonoBehaviour {
   private int captureCounter = 1;
 
   void Start() {
-    savePath = Application.dataPath + "/Capturas/";
+    savePath = Application.dataPath + "/Scripts/pr9-Microfonos-Camara-IIII/Resources/";
 
     if (!Directory.Exists(savePath)) {
       Directory.CreateDirectory(savePath);
@@ -28,6 +28,7 @@ public class TV : MonoBehaviour {
 
     if (Input.GetKey("p")) {
       webcamTexture.Stop();
+      Debug.Log("Camera stopped.");
     }
 
     if (Input.GetKey("x")) {
@@ -39,8 +40,9 @@ public class TV : MonoBehaviour {
     Texture2D snapshot = new Texture2D(webcamTexture.width, webcamTexture.height);
     snapshot.SetPixels(webcamTexture.GetPixels());
     snapshot.Apply();
-    System.IO.File.WriteAllBytes(savePath + "capture_" + captureCounter.ToString() + ".png", snapshot.EncodeToPNG());
-    Debug.Log("Photo saved at: " + savePath + "capture_" + captureCounter.ToString() + ".png");
+    string outputPath = savePath + "capture_" + captureCounter.ToString() + ".png";
+    System.IO.File.WriteAllBytes(outputPath, snapshot.EncodeToPNG());
+    Debug.Log("Photo saved at: " + outputPath);
     captureCounter++;
   }
 }
