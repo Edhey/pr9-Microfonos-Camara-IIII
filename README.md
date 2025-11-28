@@ -39,7 +39,7 @@ Using the `Microphone.Start` method, I set the following parameters:
 - `frequency`: `44100` Hz (CD quality). If the hardware doesn’t support a requested rate, Unity typically resamples; prefer standard rates like `44100` or `48000`.
 
 [Recorder.cs](Scripts/Recorder.cs)
-
+https://github.com/Edhey/pr9-Microfonos-Camara-IIII/blob/master/Resources/Recorder.mp4
 ![Recorder](Resources/Recorder_new.mp4)
 
 ### Camera
