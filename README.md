@@ -40,7 +40,7 @@ Using the `Microphone.Start` method, I set the following parameters:
 
 [Recorder.cs](Scripts/Recorder.cs)
 
-![Recorder](Resources/Recorder.mp4)
+![Recorder](Resources/Recorder_new.mp4)
 
 ### Camera
 
